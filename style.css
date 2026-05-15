@@ -471,3 +471,9 @@ footer {
     flex-direction: column;
   }
 }
+.hero-image {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 26px;
+}
