@@ -16,12 +16,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <div class="ambient-glow glow-one"></div>
+  <div class="ambient-glow glow-two"></div>
+  <div class="ambient-glow glow-three"></div>
+
   <header class="navbar">
-    <a href="#inicio" class="logo">Dr Chiroli<span>.</span></a>
+    <a href="#inicio" class="logo">
+      <span class="logo-mark">DC</span>
+      Dr Chiroli<span>.</span>
+    </a>
 
     <nav id="nav-menu">
       <a href="#transformacao">Transformação</a>
@@ -37,6 +47,13 @@
 
   <main>
     <section class="hero" id="inicio">
+      <div class="floating-icons" aria-hidden="true">
+        <div class="floating-icon icon-face"><i class="fa-solid fa-user-astronaut"></i></div>
+        <div class="floating-icon icon-dumbbell"><i class="fa-solid fa-dumbbell"></i></div>
+        <div class="floating-icon icon-apple"><i class="fa-solid fa-apple-whole"></i></div>
+        <div class="floating-icon icon-spark"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+      </div>
+
       <div class="hero-content">
         <p class="eyebrow">protocolo privado de aparência masculina</p>
 
@@ -49,8 +66,15 @@
         </p>
 
         <div class="hero-actions">
-          <a href="#guia" class="btn primary">Quero iniciar agora</a>
-          <a href="#transformacao" class="btn secondary">Ver transformação</a>
+          <a href="#guia" class="btn primary icon-btn pulse-cta">
+            <img class="app-icon-img" src="https://pay.kiwify.com.br/favicon.ico" alt="Kiwify">
+            Quero iniciar agora
+          </a>
+
+          <a href="#transformacao" class="btn secondary icon-btn">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            Ver transformação
+          </a>
         </div>
 
         <div class="stats">
@@ -72,33 +96,45 @@
 
         <div class="authority-row">
           <div class="authority-card">
+            <div class="mini-icon"><i class="fa-solid fa-face-smile"></i></div>
             <strong>Rosto</strong>
             <span>moldura, pele e presença</span>
           </div>
 
           <div class="authority-card">
+            <div class="mini-icon"><i class="fa-solid fa-dumbbell"></i></div>
             <strong>Físico</strong>
             <span>proporção e definição</span>
           </div>
 
           <div class="authority-card">
+            <div class="mini-icon"><i class="fa-solid fa-bowl-food"></i></div>
             <strong>Dieta</strong>
             <span>menos retenção e ruído</span>
           </div>
 
           <div class="authority-card">
+            <div class="mini-icon"><i class="fa-solid fa-shirt"></i></div>
             <strong>Estilo</strong>
             <span>imagem mais intencional</span>
           </div>
         </div>
 
         <div class="protocol-note">
-          Não é sobre parecer perfeito. É sobre deixar de parecer aleatório. O protocolo existe para
-          remover o que sabota sua imagem e organizar o que realmente muda sua percepção visual.
+          <i class="fa-solid fa-bolt"></i>
+          <span>
+            Não é sobre parecer perfeito. É sobre deixar de parecer aleatório. O protocolo existe para
+            remover o que sabota sua imagem e organizar o que realmente muda sua percepção visual.
+          </span>
         </div>
       </div>
 
       <div class="hero-card">
+        <div class="hero-badge">
+          <i class="fa-solid fa-circle-check"></i>
+          transformação documentada
+        </div>
+
         <img src="assets/img/IMG_3168.PNG" alt="Foto principal da transformação" class="hero-image">
 
         <div class="card-note">
@@ -124,7 +160,7 @@
       </div>
 
       <div class="timeline">
-        <article class="timeline-item">
+        <article class="timeline-item floating-card">
           <img src="assets/img/FASE1ROSTO.PNG" alt="Fase inicial do rosto" class="phase-photo">
 
           <span class="date">Rosto | Antes</span>
@@ -138,7 +174,7 @@
           </p>
         </article>
 
-        <article class="timeline-item">
+        <article class="timeline-item floating-card">
           <img src="assets/img/FASE2ROSTO.PNG" alt="Fase atual do rosto" class="phase-photo">
 
           <span class="date">Rosto | Depois</span>
@@ -152,7 +188,7 @@
           </p>
         </article>
 
-        <article class="timeline-item">
+        <article class="timeline-item floating-card">
           <img src="assets/img/FASE1ACADEMIA.PNG" alt="Fase inicial do físico" class="phase-photo">
 
           <span class="date">Físico | Antes</span>
@@ -166,7 +202,7 @@
           </p>
         </article>
 
-        <article class="timeline-item">
+        <article class="timeline-item floating-card">
           <img src="assets/img/FASE2ACADEMIA.PNG" alt="Fase atual do físico" class="phase-photo">
 
           <span class="date">Físico | Depois</span>
@@ -181,7 +217,7 @@
         </article>
       </div>
 
-      <div class="quote-strip">
+      <div class="quote-strip animated-border">
         <strong>O que essa evolução prova</strong>
 
         <p>
@@ -217,7 +253,9 @@
       </div>
 
       <div class="diagnostic-grid">
-        <article class="diagnostic-card">
+        <article class="diagnostic-card floating-card">
+          <div class="section-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+
           <h3>Sinais de aparência comum</h3>
 
           <ul>
@@ -230,7 +268,9 @@
           </ul>
         </article>
 
-        <article class="diagnostic-card">
+        <article class="diagnostic-card floating-card">
+          <div class="section-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+
           <h3>O que o protocolo corrige</h3>
 
           <ul>
@@ -245,8 +285,11 @@
       </div>
 
       <div class="fit-grid">
-        <article class="fit-card fit-yes">
-          <span class="fit-tag">para quem é</span>
+        <article class="fit-card fit-yes floating-card">
+          <span class="fit-tag">
+            <i class="fa-solid fa-check"></i>
+            para quem é
+          </span>
 
           <h3>Esse protocolo é para você se...</h3>
 
@@ -259,8 +302,11 @@
           </ul>
         </article>
 
-        <article class="fit-card fit-no">
-          <span class="fit-tag">para quem não é</span>
+        <article class="fit-card fit-no floating-card">
+          <span class="fit-tag">
+            <i class="fa-solid fa-xmark"></i>
+            para quem não é
+          </span>
 
           <h3>Esse protocolo não é para você se...</h3>
 
@@ -274,7 +320,7 @@
         </article>
       </div>
 
-      <div class="offer-band">
+      <div class="offer-band animated-border">
         <strong>O ponto central</strong>
 
         <p>
@@ -299,7 +345,8 @@
       </div>
 
       <div class="grid">
-        <article class="pillar">
+        <article class="pillar floating-card dark-card-glow">
+          <div class="section-icon dark-icon"><i class="fa-solid fa-eye"></i></div>
           <h3>01. Diagnóstico visual</h3>
 
           <p>
@@ -308,7 +355,8 @@
           </p>
         </article>
 
-        <article class="pillar">
+        <article class="pillar floating-card dark-card-glow">
+          <div class="section-icon dark-icon"><i class="fa-solid fa-drumstick-bite"></i></div>
           <h3>02. Base alimentar estética</h3>
 
           <p>
@@ -318,7 +366,8 @@
           </p>
         </article>
 
-        <article class="pillar">
+        <article class="pillar floating-card dark-card-glow">
+          <div class="section-icon dark-icon"><i class="fa-solid fa-dumbbell"></i></div>
           <h3>03. Construção corporal</h3>
 
           <p>
@@ -327,7 +376,8 @@
           </p>
         </article>
 
-        <article class="pillar">
+        <article class="pillar floating-card dark-card-glow">
+          <div class="section-icon dark-icon"><i class="fa-solid fa-face-grin-stars"></i></div>
           <h3>04. Refinamento facial</h3>
 
           <p>
@@ -336,7 +386,8 @@
           </p>
         </article>
 
-        <article class="pillar">
+        <article class="pillar floating-card dark-card-glow">
+          <div class="section-icon dark-icon"><i class="fa-solid fa-calendar-check"></i></div>
           <h3>05. Rotina semanal</h3>
 
           <p>
@@ -345,7 +396,8 @@
           </p>
         </article>
 
-        <article class="pillar">
+        <article class="pillar floating-card dark-card-glow">
+          <div class="section-icon dark-icon"><i class="fa-solid fa-camera-retro"></i></div>
           <h3>06. Registro e manutenção</h3>
 
           <p>
@@ -365,7 +417,8 @@
           </p>
         </div>
 
-        <a class="btn primary" href="#guia">
+        <a class="btn primary icon-btn" href="#guia">
+          <i class="fa-solid fa-arrow-down"></i>
           Ver oferta
         </a>
       </div>
@@ -393,19 +446,22 @@
         </ul>
 
         <div class="hero-actions">
-          <a class="btn primary icon-btn" href="https://pay.kiwify.com.br/aiEVHJG" target="_blank" rel="noopener">
-            <span class="brand-icon kiwify-icon">K</span>
+          <a class="btn primary icon-btn pulse-cta" href="https://pay.kiwify.com.br/aiEVHJG" target="_blank" rel="noopener">
+            <img class="app-icon-img" src="https://pay.kiwify.com.br/favicon.ico" alt="Kiwify">
             Comprar pela Kiwify
           </a>
 
-          <a class="btn gold icon-btn" href="https://wa.me/5565996694030" target="_blank" rel="noopener">
-            <span class="brand-icon whatsapp-icon">W</span>
+          <a class="btn whatsapp-btn icon-btn" href="https://wa.me/5565996694030" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
             Tirar dúvida no WhatsApp
           </a>
         </div>
 
         <div class="guarantee-card">
-          <strong>Compra segura pela Kiwify.</strong>
+          <strong>
+            <i class="fa-solid fa-shield-halved"></i>
+            Compra segura pela Kiwify.
+          </strong>
 
           <p class="source-links">
             Após a confirmação do pagamento, o acesso ao material é liberado pela plataforma conforme
@@ -414,8 +470,11 @@
         </div>
       </div>
 
-      <aside class="price-card">
-        <p class="badge">acesso fundador</p>
+      <aside class="price-card floating-card">
+        <p class="badge">
+          <i class="fa-solid fa-fire"></i>
+          acesso fundador
+        </p>
 
         <h3>Protocolo Completo</h3>
 
@@ -427,8 +486,8 @@
         </p>
 
         <div class="hero-actions">
-          <a class="btn dark-cta icon-btn" href="https://pay.kiwify.com.br/aiEVHJG" target="_blank" rel="noopener">
-            <span class="brand-icon kiwify-icon">K</span>
+          <a class="btn dark-cta icon-btn pulse-cta" href="https://pay.kiwify.com.br/aiEVHJG" target="_blank" rel="noopener">
+            <img class="app-icon-img" src="https://pay.kiwify.com.br/favicon.ico" alt="Kiwify">
             Iniciar agora
           </a>
         </div>
@@ -447,7 +506,7 @@
         </p>
       </div>
 
-      <div class="consult-box">
+      <div class="consult-box floating-card">
         <div>
           <h3>O que pode ser analisado</h3>
 
@@ -464,8 +523,8 @@
           </ul>
         </div>
 
-        <a class="btn secondary icon-btn" href="https://wa.me/5565996694030" target="_blank" rel="noopener">
-          <span class="brand-icon whatsapp-icon">W</span>
+        <a class="btn whatsapp-btn icon-btn" href="https://wa.me/5565996694030" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i>
           Falar no WhatsApp
         </a>
       </div>
@@ -504,17 +563,13 @@
 
           <p>
             Esse é o tipo de transformação que reforça a lógica do protocolo: aparência não é um detalhe isolado.
-            Perfil, postura, cabelo, pele, composição corporal e controle visual trabalham juntos. Quando esses 
+            Perfil, postura, cabelo, pele, composição corporal e controle visual trabalham juntos. Quando esses
             elementos entram em ordem, o rosto deixa de parecer aleatório e começa a transmitir mais estrutura,
             domínio e identidade.
           </p>
 
           <cite>Registro comparativo de evolução facial em perfil</cite>
         </div>
-      </div>
-
-        <p>
-         
       </div>
     </section>
 
@@ -599,17 +654,17 @@
 
     <div class="footer-links social-links">
       <a class="social-icon instagram-social" href="https://instagram.com/hiramchiroli_" target="_blank" rel="noopener" aria-label="Instagram">
-        <span>IG</span>
+        <i class="fa-brands fa-instagram"></i>
         Instagram
       </a>
 
       <a class="social-icon whatsapp-social" href="https://wa.me/5565996694030" target="_blank" rel="noopener" aria-label="WhatsApp">
-        <span>W</span>
+        <i class="fa-brands fa-whatsapp"></i>
         WhatsApp
       </a>
 
       <a class="social-icon kiwify-social" href="https://pay.kiwify.com.br/aiEVHJG" target="_blank" rel="noopener" aria-label="Kiwify">
-        <span>K</span>
+        <img src="https://pay.kiwify.com.br/favicon.ico" alt="Kiwify">
         Kiwify
       </a>
     </div>
